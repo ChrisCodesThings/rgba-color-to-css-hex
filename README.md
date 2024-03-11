@@ -1,35 +1,35 @@
-# stub-repo &middot; [![Test workflow status](https://github.com/ChrisCodesThings/stub-repo/actions/workflows/test.yml/badge.svg)](../../actions/workflows/test.yml) [![NPM Version](https://img.shields.io/npm/v/@chriscodesthings/stub-repo)](https://www.npmjs.com/package/@chriscodesthings/stub-repo) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+# rgba-color-to-css-hex &middot; [![Test workflow status](https://github.com/ChrisCodesThings/rgba-color-to-css-hex/actions/workflows/test.yml/badge.svg)](../../actions/workflows/test.yml) [![NPM Version](https://img.shields.io/npm/v/@chriscodesthings/rgba-color-to-css-hex)](https://www.npmjs.com/package/@chriscodesthings/rgba-color-to-css-hex) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-> **Function to determine if something is a string type**
+> **Converts an RGBA color to a CSS hex color code**
 
 ## Install
 
 ```sh
-npm install --save @chriscodesthings/stub-repo
+npm install --save @chriscodesthings/rgba-color-to-css-hex
 ```
 
 ## Use
 
 ```js
-import stubRepo from '@chriscodesthings/stub-repo';
+import rgbaColorToCSSHex from '@chriscodesthings/rgba-color-to-css-hex';
 
-console.log(stubRepo("hello world!"));
-// => true
+console.log(rgbaColorToCSSHex([100, 149, 237, 0.5])); // cornflowerblue with 50% transparency
+// => #6495ed7f
 ```
 
 ## Syntax
 
 ```js
-stubRepo(var);
+rgbaColorToCSSHex(color);
 ```
 
 ### Parameters
 
-- *var*: any
+- *color*: an array containing red, green, blue and (optional) alpha values
 
 ### Return Value
 
-Returns something probably.
+Returns the RGBA color converted to CSS hex color code.
 
 ## Description
 
