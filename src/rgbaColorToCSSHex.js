@@ -18,6 +18,5 @@ export default function (rgba) {
         + (typeof rgba[3] !== 'undefined' ? decToHexPair(Math.floor(rgba[3] * 255)) : "")
     );
 
-    console.log(rgba, "is", hex);
     return compressHex(hex);
 }
