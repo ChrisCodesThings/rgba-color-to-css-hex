@@ -32,6 +32,10 @@ describe("convert some rgba colours to hex", () => {
         expect(testFunc([100, 149, 237])).toEqual("#6495ed");
     });
 
+    test("cornflowerblue with unnecessary alpha", () => {
+        expect(testFunc([100, 149, 237, 1])).toEqual("#6495ed");
+    });
+
     test("cornflowerblue with 50% transparency", () => {
         expect(testFunc([100, 149, 237, 0.5])).toEqual("#6495ed7f");
     });
