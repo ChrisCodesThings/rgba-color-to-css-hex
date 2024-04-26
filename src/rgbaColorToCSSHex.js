@@ -1,15 +1,22 @@
-import looksLikeRGBA from '@chriscodesthings/color-looks-like-rgba';
+// @ts-check
+
 import compressHex from '@chriscodesthings/compress-css-hex-color';
 
+/**
+ * Converts a decimal number to a minimum 2 digit hex number
+ * @param {number} n Number
+ * @returns {string}
+ */
 function decToHexPair(n) {
     return Number(n).toString(16).padStart(2, "0");
 }
 
-export default function (rgba) {
-    if (!looksLikeRGBA(rgba)) {
-        return;
-    }
-
+/**
+ * Converts a colour from RGBA format to a CSS hex colour code
+ * @param {[number, number, number] | [number, number, number, number]} rgba Red, green, blue and (optional) alpha values
+ * @returns {string}
+ */
+export default function rgbaColorToCssHex(rgba) {
     const hex = (
         "#"
         + decToHexPair(rgba[0])
