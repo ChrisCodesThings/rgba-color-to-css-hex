@@ -4,7 +4,7 @@ import compressHex from '@chriscodesthings/compress-css-hex-color';
 
 /**
  * Converts a decimal number to a minimum 2 digit hex number
- * @param {number} n Number
+ * @param {number} n A number
  * @returns {string}
  */
 function decToHexPair(n) {
@@ -13,10 +13,10 @@ function decToHexPair(n) {
 
 /**
  * Converts a colour from RGBA format to a CSS hex colour code
- * @param {[number, number, number] | [number, number, number, number]} rgba Red, green, blue and (optional) alpha values
+ * @param {[number, number, number, number|undefined]} rgba Array containing red, green, blue and (optional) alpha values
  * @returns {string}
  */
-export default function rgbaColorToCssHex(rgba) {
+export default function rgbaColorToCSSHex(rgba) {
     const hex = (
         "#"
         + decToHexPair(rgba[0])
