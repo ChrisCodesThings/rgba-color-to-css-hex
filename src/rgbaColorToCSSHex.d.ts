@@ -3,6 +3,6 @@
  * @param {rgbColor | rgbaColor} rgba Array containing red, green, blue and (optional) alpha values
  * @returns {string}
  */
-export default function rgbaColorToCSSHex(rgba: import("../types.js").rgbColor | import("../types.js").rgbaColor): string;
-export type rgbColor = import('../types.js').rgbColor;
-export type rgbaColor = import('../types.js').rgbaColor;
+export default function rgbaColorToCSSHex(rgba: import("../types").rgbColor | import("../types").rgbaColor): string;
+export type rgbColor = import('../types').rgbColor;
+export type rgbaColor = import('../types').rgbaColor;
