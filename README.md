@@ -8,6 +8,7 @@ Converts a color given as red, green and blue values to a CSS hex color code.
 
 ### See...
 - [Install/Usage](#install "Install and Usage")
+- [Types](#types "Types")
 - [Syntax](#syntax "Syntax")
 - [Examples](#examples "Examples")
 - [See Also](#see-also "See Also")
@@ -20,13 +21,46 @@ Converts a color given as red, green and blue values to a CSS hex color code.
 npm install --save @chriscodesthings/rgba-color-to-css-hex
 ```
 
-## Use
+## Usage
 
 ```js
 import rgbaColorToCSSHex from '@chriscodesthings/rgba-color-to-css-hex';
 
 console.log(rgbaColorToCSSHex([100, 149, 237, 0.5])); // cornflowerblue with 50% transparency
 // => #6495ed7f
+```
+
+## Types
+
+These types are made available:
+
+```ts
+export type rgbColor = [number, number, number];
+export type rgbaColor = [number, number, number, number];
+```
+
+### TypeScript
+
+To use the types in your TypeScript project:
+
+```js
+import type { rgbColor, rgbaColor } from '@chriscodesthings/rgba-color-to-css-hex';
+
+const myColor: rgbColor | rgbaColor = [100, 149, 237, 1];
+```
+
+### JavaScript
+
+You can also use types in JavaScript with JSDoc with `@typedef` imports:
+
+```js
+/**
+ * @typedef {import('@chriscodesthings/rgba-color-to-css-hex').rgbColor} rgbColor
+ * @typedef {import('@chriscodesthings/rgba-color-to-css-hex').rgbaColor} rgbaColor
+ */
+
+/** @type {rgbColor | rgbaColor} */
+const myColor = [100, 149, 237, 1];
 ```
 
 ## Syntax
