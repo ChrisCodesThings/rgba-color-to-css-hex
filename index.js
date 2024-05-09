@@ -1,2 +1,4 @@
-export { default } from "./src/rgbaColorToCSSHex.js";
+// @ts-check
 
+export { default } from "./src/rgbaColorToCSSHex.js";
+export * from "./types.js";
