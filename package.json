@@ -27,9 +27,13 @@
   "main": "index.js",
   "type": "module",
   "files": [
-    "/CHANGELOG.md",
     "/index.js",
     "/index.d.ts",
+    "/types.js",
+    "/types.d.ts",
+    "/CHANGELOG.md",
+    "/README.md",
+    "/LICENSE",
     "/src"
   ],
   "engines": {
