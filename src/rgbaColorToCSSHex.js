@@ -1,7 +1,7 @@
 // @ts-check
 
 import compressHex from '@chriscodesthings/compress-css-hex-color';
-import * as Types from '../types';
+import * as colorTypes from '@chriscodesthings/basic-color-types';
 
 /**
  * Converts a decimal number to a minimum 2 digit hex number
@@ -14,8 +14,8 @@ function decToHexPair(n) {
 
 /**
  * Converts a colour from RGBA format to a CSS hex colour code
- * @param {Types.rgbColor | Types.rgbaColor} rgba Array containing red, green, blue and (optional) alpha values
- * @returns {string}
+ * @param {colorTypes.rgbColor | colorTypes.rgbaColor} rgba Array containing red, green, blue and (optional) alpha values
+ * @returns {colorTypes.cssHexCode}
  */
 export default function rgbaColorToCSSHex(rgba) {
     const hex = (

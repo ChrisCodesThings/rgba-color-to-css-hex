@@ -17,6 +17,7 @@
     "url": "https://github.com/ChrisCodesThings/rgba-color-to-css-hex/issues"
   },
   "dependencies": {
+    "@chriscodesthings/basic-color-types": "^1.0.0",
     "@chriscodesthings/compress-css-hex-color": "^1.0.0"
   },
   "devDependencies": {
