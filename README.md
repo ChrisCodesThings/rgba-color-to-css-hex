@@ -32,36 +32,8 @@ console.log(rgbaColorToCSSHex([100, 149, 237, 0.5])); // cornflowerblue with 50%
 
 ## Types
 
-These types are made available:
-
-```ts
-export type rgbColor = [number, number, number];
-export type rgbaColor = [number, number, number, number];
-```
-
-### TypeScript
-
-To use the types in your TypeScript project:
-
-```js
-import type { rgbColor, rgbaColor } from '@chriscodesthings/rgba-color-to-css-hex';
-
-const myColor: rgbColor | rgbaColor = [100, 149, 237, 1];
-```
-
-### JavaScript
-
-You can also use types in JavaScript with JSDoc with `@typedef` imports:
-
-```js
-/**
- * @typedef {import('@chriscodesthings/rgba-color-to-css-hex').rgbColor} rgbColor
- * @typedef {import('@chriscodesthings/rgba-color-to-css-hex').rgbaColor} rgbaColor
- */
-
-/** @type {rgbColor | rgbaColor} */
-const myColor = [100, 149, 237, 1];
-```
+This package uses types from:
+- [**basic-color-types**: Defines named types for common color formats](https://github.com/ChrisCodesThings/basic-color-types "Defines named types for common color formats")
 
 ## Syntax
 
